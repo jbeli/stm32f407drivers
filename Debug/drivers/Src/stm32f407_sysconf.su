@@ -1,0 +1,8 @@
+stm32f407_sysconf.c:11:6:SYSCFG_MemoryRemapConfig	16	static
+stm32f407_sysconf.c:17:6:SYSCFG_SetPeriphMode	16	static
+stm32f407_sysconf.c:30:6:SYSCFG_SetClockPeriph	4	static
+stm32f407_sysconf.c:34:6:SYSCFG_SetExternalInt	24	static
+stm32f407_sysconf.c:42:6:SYSCFG_SetCompensationCellPowerDown	16	static
+stm32f407_sysconf.c:47:9:SYSCFG_GetCompensationCellReadyFlag	16	static
+stm32f407_sysconf.c:54:9:SYSCFG_GetMemoryRemap	16	static
+stm32f407_sysconf.c:62:9:SYSCFG_GetPeriphMode	16	static

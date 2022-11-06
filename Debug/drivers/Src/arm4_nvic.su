@@ -1,0 +1,8 @@
+arm4_nvic.c:11:6:NVIC_EnableIRQ	16	static
+arm4_nvic.c:28:6:NVIC_DisableIRQ	16	static
+arm4_nvic.c:45:6:NVIC_SetPending	16	static
+arm4_nvic.c:62:6:NVIC_ClearPending	16	static
+arm4_nvic.c:79:9:NVIC_GetIRQPdStatus	24	static
+arm4_nvic.c:98:6:GPIO_IRQInterruptConfig	16	static
+arm4_nvic.c:137:6:NVIC_SetPriority	24	static
+arm4_nvic.c:145:9:NVIC_GetPriority	24	static

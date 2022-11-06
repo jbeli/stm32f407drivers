@@ -1,0 +1,8 @@
+stm32f407_exti.c:10:6:EXTI_MaskInterrupt	16	static
+stm32f407_exti.c:16:6:EXTI_UnmaskInterrupt	16	static
+stm32f407_exti.c:21:6:EXTI_MaskEvent	16	static
+stm32f407_exti.c:27:6:EXTI_UnmaskEvent	16	static
+stm32f407_exti.c:32:6:EXTI_SetRisingTrigger	16	static
+stm32f407_exti.c:38:6:EXTI_SetFallingTrigger	16	static
+stm32f407_exti.c:44:6:EXTI_SetRisingFallingTrigger	16	static
+stm32f407_exti.c:50:6:EXTI_PendingReg	16	static
