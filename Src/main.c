@@ -21,8 +21,34 @@
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
-int main(void)
+#include "stm32f407_gpio.h"
+#include "stm32f407_sysconf.h"
+#include "stm32f407_rcc.h"
+#include "arm4.h"
+
+int main()
 {
-    /* Loop forever */
-	for(;;);
+	//SCB->CPACR |= ((3UL << 10*2)|(3UL << 11*2));
+	uint8_t val ;
+	RCC_CLKInitTypeDef div;
+	RCC_HSIConfig(RCC_HSI_ON);
+	div.AHBdiv = AHB_SYSCLK_DIV2 ;
+	div.APB1div = APB1_SYSCLK_DIV8 ;
+	div.APB2div = APB2_SYSCLK_DIV16 ;
+
+	RCC_SetPrescaler(div);
+	//RCC_DeInitPrescaler();
+
+
+
+
+	RCC_SetSystemClockSwitch(HSI_OSC_SYSTEM_CLK);
+	val = RCC_GetOscillatorSoucre();
+	RCC_GetSYSCLK() ;
+	RCC_GetHCLK(div) ;
+	RCC_GetPLCLK1(div);
+	RCC_GetPLCLK2(div);
+
+
 }
+

@@ -1,0 +1,577 @@
+/*
+ * stm32f407_rcc_periph.c
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: Ahmed
+ */
+
+#include "stm32f407_rcc.h"
+
+
+/* AHB1 */
+
+void RCC_EnableAHB1PeriphClockOTGHSULPIEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_OTGHSULPIEN ;
+}
+void RCC_DisableAHB1PeriphClockOTGHSULPIEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_OTGHSULPIEN ;
+}
+
+void RCC_EnableAHB1PeriphClockOTGHSEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_OTGHSEN ;
+}
+void RCC_DisableAHB1PeriphClockOTGHSEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_OTGHSEN ;
+}
+
+void RCC_EnableAHB1PeriphClockETHMACPTPEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_ETHMACPTPEN ;
+}
+void RCC_DisableAHB1PeriphClockETHMACPTPEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_ETHMACPTPEN ;
+}
+
+void RCC_EnableAHB1PeriphClockETHMACRXEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_ETHMACRXEN ;
+}
+void RCC_DisableAHB1PeriphClockETHMACRXEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_ETHMACRXEN ;
+}
+
+void RCC_EnableAHB1PeriphClockETHMACTXEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_ETHMACTXEN ;
+}
+void RCC_DisableAHB1PeriphClockETHMACTXEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_ETHMACTXEN ;
+}
+
+void RCC_EnableAHB1PeriphClockETHMACEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_ETHMACEN ;
+}
+void RCC_DisableAHB1PeriphClockETHMACEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_ETHMACEN ;
+}
+
+void RCC_EnableAHB1PeriphClockDMA2EN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_DMA2EN ;
+}
+void RCC_DisableAHB1PeriphClockDMA2EN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_DMA2EN ;
+}
+
+void RCC_EnableAHB1PeriphClockDMA1EN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_DMA1EN ;
+}
+void RCC_DisableAHB1PeriphClockDMA1EN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_DMA1EN ;
+}
+
+void RCC_EnableAHB1PeriphClockCCMDATARAMEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_CCMDATARAMEN ;
+}
+void RCC_DisableAHB1PeriphClockCCMDATARAMEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_CCMDATARAMEN ;
+}
+
+void RCC_EnableAHB1PeriphClockBKPSRAMEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_BKPSRAMEN ;
+}
+void RCC_DisableAHB1PeriphClockBKPSRAMEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_BKPSRAMEN ;
+}
+
+void RCC_EnableAHB1PeriphClockCRCEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_CRCEN ;
+}
+void RCC_DisableAHB1PeriphClockCRCEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_CRCEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOIEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOIEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOIEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOIEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOHEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOHEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOHEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOHEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOGEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOGEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOGEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOGEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOFEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOFEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOFEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOFEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOEEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOEEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOEEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOEEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIODEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIODEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIODEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOCEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOCEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOCEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOBEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOBEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOBEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOBEN ;
+}
+
+void RCC_EnableAHB1PeriphClockGPIOAEN()
+{
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN ;
+}
+void RCC_DisableAHB1PeriphClockGPIOAEN()
+{
+	RCC->AHB1ENR &= ~ RCC_AHB1ENR_GPIOAEN ;
+}
+
+/* AHB2 */
+
+void RCC_EnableAHB2PeriphClockOTGFSEN()
+{
+	RCC->AHB2ENR |= RCC_AHB2ENR_OTGFSEN ;
+}
+void RCC_DisableAHB2PeriphClockOTGFSEN()
+{
+	RCC->AHB2ENR &= ~ RCC_AHB2ENR_OTGFSEN ;
+}
+
+void RCC_EnableAHB2PeriphClockRNGEN()
+{
+	RCC->AHB2ENR |= RCC_AHB2ENR_RNGEN ;
+}
+void RCC_DisableAHB2PeriphClockRNGEN()
+{
+	RCC->AHB2ENR &= ~ RCC_AHB2ENR_RNGEN ;
+}
+
+void RCC_EnableAHB2PeriphClockHASHEN()
+{
+	RCC->AHB2ENR |= RCC_AHB2ENR_HASHEN ;
+}
+void RCC_DisableAHB2PeriphClockHASHEN()
+{
+	RCC->AHB2ENR &= ~ RCC_AHB2ENR_HASHEN ;
+}
+
+void RCC_EnableAHB2PeriphClockCRYPEN()
+{
+	RCC->AHB2ENR |= RCC_AHB2ENR_CRYPEN ;
+}
+void RCC_DisableAHB2PeriphClockCRYPEN()
+{
+	RCC->AHB2ENR &= ~ RCC_AHB2ENR_CRYPEN ;
+}
+
+void RCC_EnableAHB2PeriphClockDCMIEN()
+{
+	RCC->AHB2ENR |= RCC_AHB2ENR_DCMIEN ;
+}
+void RCC_DisableAHB2PeriphClockDCMIEN()
+{
+	RCC->AHB2ENR &= ~ RCC_AHB2ENR_DCMIEN ;
+}
+
+/* AHB3 */
+
+void RCC_EnableAHB3PeriphClockFSMCEN()
+{
+	RCC->AHB3ENR |= RCC_AHB3ENR_FSMCEN ;
+}
+void RCC_DisableAHB3PeriphClockFSMCEN()
+{
+	RCC->AHB3ENR &= ~ RCC_AHB3ENR_FSMCEN ;
+}
+
+/* APB1 */
+
+void RCC_EnableAPB1PeriphClockDACEN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_DACEN ;
+}
+void RCC_DisableAPB1PeriphClockDACEN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_DACEN ;
+}
+
+void RCC_EnableAPB1PeriphClockPWREN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_PWREN ;
+}
+void RCC_DisableAPB1PeriphClockPWREN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_PWREN ;
+}
+
+void RCC_EnableAPB1PeriphClockCAN2EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_CAN2EN ;
+}
+void RCC_DisableAPB1PeriphClockCAN2EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_CAN2EN ;
+}
+
+void RCC_EnableAPB1PeriphClockCAN1EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_CAN1EN ;
+}
+void RCC_DisableAPB1PeriphClockCAN1EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_CAN1EN ;
+}
+
+void RCC_EnableAPB1PeriphClockI2C3EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_I2C3EN ;
+}
+void RCC_DisableAPB1PeriphClockI2C3EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_I2C3EN ;
+}
+
+void RCC_EnableAPB1PeriphClockI2C2EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_I2C2EN ;
+}
+void RCC_DisableAPB1PeriphClockI2C2EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_I2C2EN ;
+}
+
+void RCC_EnableAPB1PeriphClockI2C1EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_I2C1EN ;
+}
+void RCC_DisableAPB1PeriphClockI2C1EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_I2C1EN ;
+}
+
+void RCC_EnableAPB1PeriphClockUART5EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_UART5EN ;
+}
+void RCC_DisableAPB1PeriphClockUART5EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_UART5EN ;
+}
+
+void RCC_EnableAPB1PeriphClockUART4EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_UART4EN ;
+}
+void RCC_DisableAPB1PeriphClockUART4EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_UART4EN ;
+}
+
+void RCC_EnableAPB1PeriphClockUSART3EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_USART3EN ;
+}
+void RCC_DisableAPB1PeriphClockUSART3EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_USART3EN ;
+}
+
+void RCC_EnableAPB1PeriphClockUSART2EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_USART2EN ;
+}
+void RCC_DisableAPB1PeriphClockUSART2EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_USART2EN ;
+}
+
+void RCC_EnableAPB1PeriphClockSPI3EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_SPI3EN ;
+}
+void RCC_DisableAPB1PeriphClockSPI3EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_SPI3EN ;
+}
+
+void RCC_EnableAPB1PeriphClockSPI2EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_SPI2EN ;
+}
+void RCC_DisableAPB1PeriphClockSPI2EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_SPI2EN ;
+}
+
+void RCC_EnableAPB1PeriphClockWWDGEN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_WWDGEN ;
+}
+void RCC_DisableAPB1PeriphClockWWDGEN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_WWDGEN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM14EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM14EN ;
+}
+void RCC_DisableAPB1PeriphClockTIM14EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM14EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM13EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM13EN ;
+}
+void RCC_DisableAPB1PeriphClockTIM13EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM13EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM12EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM12EN ;
+}
+void RCC_DisableAPB1PeriphClockTIM12EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM12EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM7EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM7EN;
+}
+void RCC_DisableAPB1PeriphClockTIM7EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM7EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM6EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM6EN ;
+}
+void RCC_DisableAPB1PeriphClockTIM6EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM6EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM5EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM5EN ;
+}
+void RCC_DisableAPB1PeriphClockTIM5EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM5EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM4EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM4EN ;
+}
+void RCC_DisableAPB1PeriphClockTIM4EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM4EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM3EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM3EN;
+}
+void RCC_DisableAPB1PeriphClockTIM3EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM3EN ;
+}
+
+void RCC_EnableAPB1PeriphClockTIM2EN()
+{
+	RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+}
+void RCC_DisableAPB1PeriphClockTIM2EN()
+{
+	RCC->APB1ENR &= ~ RCC_APB1ENR_TIM2EN ;
+}
+
+/* APB2 */
+
+void RCC_EnableAPB2PeriphClockTIM11EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_TIM11EN;
+}
+void RCC_DisableAPB2PeriphClockTIM11EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_TIM11EN ;
+}
+
+void RCC_EnableAPB2PeriphClockTIM10EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_TIM10EN;
+}
+void RCC_DisableAPB2PeriphClockTIM10EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_TIM10EN ;
+}
+
+void RCC_EnableAPB2PeriphClockTIM9EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_TIM9EN;
+}
+void RCC_DisableAPB2PeriphClockTIM9EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_TIM9EN ;
+}
+
+void RCC_EnableAPB2PeriphClockSYSCFGEN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+}
+void RCC_DisableAPB2PeriphClockSYSCFGEN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_SYSCFGEN ;
+}
+
+void RCC_EnableAPB2PeriphClockSPI1EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_SPI1EN;
+}
+void RCC_DisableAPB2PeriphClockSPI1EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_SPI1EN ;
+}
+
+void RCC_EnableAPB2PeriphClockSDIOEN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_SDIOEN;
+}
+void RCC_DisableAPB2PeriphClockSDIOEN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_SDIOEN ;
+}
+
+void RCC_EnableAPB2PeriphClockADC3EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_ADC3EN;
+}
+void RCC_DisableAPB2PeriphClockADC3EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_ADC3EN ;
+}
+
+void RCC_EnableAPB2PeriphClockADC2EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_ADC2EN;
+}
+void RCC_DisableAPB2PeriphClockADC2EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_ADC2EN ;
+}
+
+void RCC_EnableAPB2PeriphClockADC1EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
+}
+void RCC_DisableAPB2PeriphClockADC1EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_ADC1EN ;
+}
+
+void RCC_EnableAPB2PeriphClockUSART6EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_USART6EN;
+}
+void RCC_DisableAPB2PeriphClockUSART6EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_USART6EN ;
+}
+
+void RCC_EnableAPB2PeriphClockUSART1EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_USART1EN;
+}
+void RCC_DisableAPB2PeriphClockUSART1EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_USART1EN ;
+}
+
+void RCC_EnableAPB2PeriphClockTIM8EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_TIM8EN;
+}
+void RCC_DisableAPB2PeriphClockTIM8EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_TIM8EN ;
+}
+
+void RCC_EnableAPB2PeriphClockTIM1EN()
+{
+	RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;
+}
+void RCC_DisableAPB2PeriphClockTIM1EN()
+{
+	RCC->APB2ENR &= ~ RCC_APB2ENR_TIM1EN ;
+}

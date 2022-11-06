@@ -1,0 +1,9 @@
+stm32f407_rcc.c:12:6:RCC_HSIConfig	16	static
+stm32f407_rcc.c:28:6:RCC_SetPrescaler	24	static
+stm32f407_rcc.c:34:6:RCC_DeInitPrescaler	4	static
+stm32f407_rcc.c:41:6:RCC_SetSystemClockSwitch	24	static
+stm32f407_rcc.c:50:16:RCC_GetOscillatorSoucre	16	static
+stm32f407_rcc.c:57:6:RCC_GetSYSCLK	8	static
+stm32f407_rcc.c:71:5:RCC_GetHCLK	24	static
+stm32f407_rcc.c:75:7:RCC_GetPLCLK1	24	static
+stm32f407_rcc.c:79:7:RCC_GetPLCLK2	24	static
